@@ -44,7 +44,7 @@ export default function Page() {
 
   return (
     <div>
-      <section className="blog-into min-h-screen bg-[#FBF7F2] flex items-center">
+      <section className="blog-into max-w-screen bg-[#FBF7F2] flex items-center">
         <div className="max-w-7xl mx-auto w-full px-6">
           <div className="flex flex-col lg:flex-row items-center gap-16">
             {/* LEFT IMAGE */}
@@ -89,7 +89,7 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="email-session w-max-screen bg-[#8a8650] py-20">
+      <section className="email-session w-full bg-[#8a8650] py-20">
         <div className="max-w-6xl mx-auto border border-2 border-gray-300 px-6 py-27">
           <div className="flex flex-col items-center text-center">
             <h1 className="text-4xl font-semibold text-white mb-4">

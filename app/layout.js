@@ -23,7 +23,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${dmSans.variable} ${plexMono.variable} antialiased`}>
+      <body className={`${dmSans.variable} ${plexMono.variable} antialiasedm max-w-screen`}>
         <Header />
         {children}
         <Footer />

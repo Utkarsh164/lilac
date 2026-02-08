@@ -5,7 +5,7 @@ import { useState } from "react";
 const Header = () => {
   const [drop, setDrop] = useState(false);
   return (
-    <header className="top-0 left-0 w-full z-50">
+    <header className="top-0 left-0 max-w-screen z-50">
       <div className="mx-auto sticky flex h-[88px] items-center justify-between px-6 md:px-[54px] z-51 bg-transparent">
         <button
           className="flex flex-col gap-2 md:hidden"

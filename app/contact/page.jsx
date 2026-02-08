@@ -59,7 +59,7 @@ const Contact = () => {
 
   return (
     <>
-      <section className=" connect-session relative bg-[#cfd0d8] pb-36">
+      <section className="max-w-screen connect-session relative bg-[#cfd0d8] pb-36">
         <div className="max-w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 px-4">
           {/* LEFT COLUMN */}
           <div className="flex flex-col md:pl-20 pt-20 text-center md:text-left">
@@ -169,7 +169,7 @@ const Contact = () => {
         </div>
       </section>
 
-      <section className="social-session w-max-screen px-10 py-16 bg-[#faf6ef]">
+      <section className="social-session w-full px-10 py-16 bg-[#faf6ef]">
         <h1 className="text-5xl text-green-900 mb-12">Find me on social.</h1>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10">

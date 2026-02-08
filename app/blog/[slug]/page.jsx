@@ -14,7 +14,7 @@ export default function Page() {
 
 
   return (
-    <section className="bg-[#FBF7F2] min-h-screen">
+    <section className="bg-[#FBF7F2] min-h-screen max-w-screen">
       <div className="mx-auto max-w-[640px] px-6 pt-[140px] pb-[160px]">
 
         <p className="text-center text-[12px] tracking-[0.2em] text-[#2E3D1F]/60 mb-[48px]">

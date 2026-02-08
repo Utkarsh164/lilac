@@ -9,7 +9,7 @@ import SupportSection from "@/components/(HomePageComponent)/supportSection";
 
 export default function Home() {
   return (
-    <div>
+    <div className="max-w-screen">
       <HeroSection />
       <IntroSection />
       <SpecialtiesSection/>
