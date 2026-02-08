@@ -12,9 +12,9 @@ const Footer = () => {
             <h3 className="text-[39px] font-semibold mb-10">Lilac Template</h3>
 
             <p className="mb-10 leading-[1.8] font-medium text-xl">
-              123 Example Road
+             123th Street 45 W,
               <br />
-              Minneapolis, MN
+              Santa Monica, CA 90401
             </p>
 
             <p className="leading-[1.8] font-medium text-xl">
