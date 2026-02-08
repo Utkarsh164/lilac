@@ -1,7 +1,7 @@
 "use client";
 
 import { blogItems } from "@/lib/data";
-import { formatDate } from "@/lib/helper";
+import { formatDate, truncate } from "@/lib/helper";
 import { notFound, useParams } from "next/navigation";
 import Link from "next/link";
 
@@ -21,7 +21,7 @@ export default function Page() {
           {formatDate(content.date).toUpperCase()}
         </p>
 
-        <h1 className="text-center text-7xl leading-[1.15] font-medium text-[#2E3D1F] mb-[72px]">
+        <h1 className="text-center text-5xl leading-[1.15] font-medium text-[#2E3D1F] mb-[72px]">
           {content.title}
         </h1>
 
@@ -40,7 +40,7 @@ export default function Page() {
               className="group flex items-center gap-4 text-4xl font-medium hover:opacity-70 transition"
             >
               <span className="text-5xl leading-none">←</span>
-              <span className="group-hover:underline">{prevPost.title}</span>
+              <span className="group-hover:underline"> {truncate(prevPost.title, 8)}</span>
             </Link>
           ) : (
             <div />
@@ -52,7 +52,7 @@ export default function Page() {
               href={`/blog/${nextPost.slug}`}
               className="group flex items-center gap-4 text-4xl font-medium hover:opacity-70 transition"
             >
-              <span className="group-hover:underline">{nextPost.title}</span>
+              <span className="group-hover:underline"> {truncate(nextPost.title, 8)}</span>
               <span className="text-5xl leading-none">→</span>
             </Link>
           ) : (

@@ -3,30 +3,20 @@ import React from "react";
 
 const Card = ({ content }) => {
   return (
-    <div
-      className="
-      border border-green-900
-      bg-[#e6e1d9]
-      flex flex-col
-      p-6
-      max-w-sm
-      mx-auto
-    "
-    >
-      <h2 className="font-semibold text-green-900 text-xl mb-4 text-left">
-        {content.title}
-      </h2>
-      <p className="text-green-900 leading-relaxed mb-8">
-        {content.description}
-      </p>
-      <div className="mt-auto flex justify-center">
-        <div className="relative w-52 h-52">
+    <div className="border border-black flex flex-col m-3 p-4 bg-[#e6e1d9] w-full max-w-md">
+      <div className="w-full font-semibold text-center p-3 text-left text-2xl">
+        <h1>{content.title}</h1>
+      </div>
+      <div className="mt-3 text-center h-[100px] my-4">
+        <p>{content.description}</p>
+      </div>
+      <div className="h-[300px] w-full flex justify-center items-center">
+        <div className="relative h-full aspect-square">
           <Image
             src={content.imgUrl}
-            alt={content.title}
+            alt="Images"
             fill
             className="rounded-full object-cover"
-            sizes="(max-width: 640px) 208px, 208px"
           />
         </div>
       </div>

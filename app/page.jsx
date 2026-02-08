@@ -5,7 +5,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { faqItems, mySpecialties } from "@/lib/data";
+import { faqItems, mySpecialties, profBack } from "@/lib/data";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -40,7 +40,7 @@ export default function Home() {
               </h1>
 
               <p className="mt-6 text-base sm:text-lg max-w-md font-light">
-                Therapy for Adults in Minneapolis, MN.
+                Anxiety & Trauma Therapy in Santa Monica, CA.
               </p>
 
               <Link href="/">
@@ -66,7 +66,7 @@ export default function Home() {
         </div>
 
         <div className="flex flex-col justify-between order-2 lg:order-1">
-          <div className="px-6 md:px-10 py-12 flex flex-col justify-center">
+          <div className="px-6 md:px-10 py-12 md:py-56 flex flex-col justify-center">
             <h2 className="text-4xl md:text-5xl lg:text-6xl text-green-900 mb-6">
               Live a fulfilling life.
             </h2>
@@ -90,7 +90,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="max-w-7xl mx-auto px-6 py-16">
+      <section className="max-w mx-auto px-6 py-16">
         <h1 className="text-center text-4xl md:text-5xl font-semibold text-green-900 mb-14">
           My Specialties
         </h1>
@@ -124,11 +124,11 @@ export default function Home() {
             </p>
 
             <ul className="list-disc list-inside space-y-3 text-[#2F3F2F] opacity-90 mb-8">
-              <li>Persistent feelings of sadness or hopelessness</li>
-              <li>Trouble focusing or making decisions</li>
-              <li>Difficulty maintaining relationships</li>
-              <li>Feeling constantly exhausted or unmotivated</li>
-              <li>A pervasive sense of being overwhelmed</li>
+              <li>Constant worry or overthinking</li>
+              <li>Difficulty relaxing or sleeping</li>
+              <li>Tension in your body or frequent stress</li>
+              <li>Lingering effects of past experiences</li>
+              <li>Burnout from long-term pressure or perfectionism</li>
             </ul>
 
             <p className="text-[#2F3F2F] opacity-90">
@@ -257,7 +257,7 @@ export default function Home() {
             collapsible
             className="w-full border-t border-[#2F3B1F]/40"
           >
-            {faqItems.map((faq, index) => (
+            {profBack.map((faq, index) => (
               <AccordionItem
                 key={index}
                 value={`item-${index}`}

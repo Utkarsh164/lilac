@@ -31,15 +31,6 @@ const Contact = () => {
                 height={420}
                 className="rounded-t-full object-cover"
               />
-
-              <div className="absolute bottom-0 right-10 md:right-[270px] w-[160px] h-[160px] rounded-full overflow-hidden">
-                <Image
-                  src="/floral.webp"
-                  alt="floral detail"
-                  fill
-                  className="object-cover"
-                />
-              </div>
             </div>
           </div>
 
@@ -121,7 +112,7 @@ const Contact = () => {
           <div className="w-full lg:w-[700px] h-[420px] bg-white">
             <iframe
               title="Office location map"
-              src="https://www.google.com/maps?q=Minneapolis,MN&output=embed"
+             src="https://www.google.com/maps?q=123th+Street+45+W+Santa+Monica+CA+90401&output=embed"
               className="w-full h-full border-0"
               loading="lazy"
             />

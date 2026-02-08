@@ -1,4 +1,4 @@
-import BlogCard from "@/components/bolgCard";
+import BlogCard from "@/components/blogCard";
 import { blogItems } from "@/lib/data";
 import Image from "next/image";
 
@@ -24,15 +24,13 @@ export default function Page() {
             {/* RIGHT TEXT */}
             <div className="flex flex-col gap-6 text-center lg:text-left w-full lg:w-1/2">
               <h1 className="text-5xl md:text-7xl font-semibold text-[#2E3D1F] leading-tight tracking-tight">
-                The Lilac Blog
+                Therapy Insights & Reflections
               </h1>
 
               <p className="text-md md: text-2xl text-[#2E3D1F]/80 max-w">
-                My tiny corner of the internet
+                 A space where I share thoughts on anxiety, trauma,
                 <br />
-                where I talk about all things
-                <br />
-                healing, heart, and wholeness.
+                burnout, and creating steadier emotional ground.
               </p>
 
               <span className="text-md font-medium text-[#2E3D1F]/80">
