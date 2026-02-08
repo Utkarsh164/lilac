@@ -1,12 +1,65 @@
-
+"use client";
 import { socialMedia } from "@/lib/data";
 import Image from "next/image";
+import { useGSAP } from "@gsap/react";
+import gsap, { ScrollTrigger } from "gsap/all";
 import React from "react";
 
 const Contact = () => {
+  useGSAP(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.from(".connect-session", {
+      opacity: 0,
+      y: 50,
+      duration: 1,
+      ease: "power1.out",
+    });
+
+    const bookSession = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".book-session",
+        start: "top 50%",
+        end: "bottom bottom",
+      },
+    });
+    bookSession.from(".book-session", {
+      opacity: 0,
+      y: 30,
+      duration: 1,
+    });
+
+    const mapSession = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".map-session",
+        start: "top 50%",
+        end: "bottom bottom",
+      },
+    });
+    mapSession.from(".map-session", {
+      opacity: 0,
+      y: 30,
+      duration: 1,
+    });
+
+    const socialSession = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".social-session",
+        start: "top 50%",
+        end: "bottom bottom",
+      },
+    });
+    socialSession.from(".social-session .grid > *", {
+      opacity: 0,
+      y: 20,
+      duration: 0.8,
+      stagger: 0.1,
+    });
+  });
+
   return (
     <>
-      <section className="relative bg-[#cfd0d8] pb-36">
+      <section className=" connect-session relative bg-[#cfd0d8] pb-36">
         <div className="max-w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 px-4">
           {/* LEFT COLUMN */}
           <div className="flex flex-col md:pl-20 pt-20 text-center md:text-left">
@@ -56,13 +109,11 @@ const Contact = () => {
         </div>
       </section>
 
-      <section className="w-full flex items-center justify-center flex-col py-16 bg-[#ebe7e1]">
-        {/* Heading */}
+      <section className="book-session w-full flex items-center justify-center flex-col py-16 bg-[#ebe7e1]">
         <h1 className="text-5xl font-semibold text-[#2f3b1f] mb-8">
           Book an appointment.
         </h1>
 
-        {/* Description */}
         <p className="text-xl text-center max-w-3xl mb-24 text-gray-700">
           Add some text here if you like, and add your scheduling widget below,
           <br />
@@ -73,7 +124,6 @@ const Contact = () => {
           your client portal).
         </p>
 
-        {/* Card */}
         <div className="bg-white px-16 py-14 flex flex-col gap-6 items-center shadow-sm">
           <p className="text-3xl font-bold text-gray-900">
             This page is not active
@@ -90,9 +140,8 @@ const Contact = () => {
         </div>
       </section>
 
-      <section className="w-full bg-[#8a8650] py-24">
+      <section className="map-session w-full bg-[#8a8650] py-24">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between gap-26 ">
-          {/* LEFT SIDE — TEXT */}
           <div className="text-white max-w-md ">
             <h1 className="text-5xl font-semibold mb-6">My Office</h1>
 
@@ -109,11 +158,10 @@ const Contact = () => {
             </p>
           </div>
 
-          {/* RIGHT SIDE — MAP */}
           <div className="w-full lg:w-[700px] h-[420px] bg-white">
             <iframe
               title="Office location map"
-             src="https://www.google.com/maps?q=123th+Street+45+W+Santa+Monica+CA+90401&output=embed"
+              src="https://www.google.com/maps?q=123th+Street+45+W+Santa+Monica+CA+90401&output=embed"
               className="w-full h-full border-0"
               loading="lazy"
             />
@@ -121,7 +169,7 @@ const Contact = () => {
         </div>
       </section>
 
-      <section className="w-max-screen px-10 py-16 bg-[#faf6ef]">
+      <section className="social-session w-max-screen px-10 py-16 bg-[#faf6ef]">
         <h1 className="text-5xl text-green-900 mb-12">Find me on social.</h1>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10">
