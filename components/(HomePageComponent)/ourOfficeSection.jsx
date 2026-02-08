@@ -1,10 +1,51 @@
 "use client";
+import { useGSAP } from "@gsap/react";
+import gsap, { ScrollTrigger } from "gsap/all";
 import React from "react";
 import Image from "next/image";
 
 const OurOfficeSection = () => {
+  useGSAP(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const officeTop = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".our-office",
+        start: "top 75%",
+        end: "bottom bottom",
+      },
+    });
+
+    officeTop.from(".our-office", {
+      opacity: 0,
+      y: 40,
+      duration: 1,
+    });
+
+    officeTop.from(
+      ".our-office .space-y-8, .our-office .prose, .our-office aside",
+      { opacity: 0, y: 20, stagger: 0.12, duration: 0.6 },
+      "-=" + 0.6
+    );
+
+    const officeImages = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".our-office",
+        start: "top 60%",
+        end: "bottom bottom",
+      },
+    });
+
+    officeImages.from(".our-office .relative", {
+      opacity: 0,
+      y: 20,
+      duration: 0.8,
+      stagger: 0.1,
+    });
+  });
+
   return (
-    <section className="bg-[#fbf8f4] py-28">
+    <section className="our-office bg-[#fbf8f4] py-28">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           
