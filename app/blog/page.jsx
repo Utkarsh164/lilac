@@ -47,11 +47,10 @@ export default function Page() {
       <section className="blog-into max-w-screen bg-[#FBF7F2] flex items-center">
         <div className="max-w-7xl mx-auto w-full px-6">
           <div className="flex flex-col lg:flex-row items-center gap-16">
-            {/* LEFT IMAGE */}
             <div className="flex justify-center lg:justify-start w-full lg:w-1/2">
               <div className="relative w-[180px] h-[240px] md:w-[200px] md:h-[300px] lg:w-[500px] lg:h-[700px] rounded-t-[999px] overflow-hidden">
                 <Image
-                  src="/floral.webp"
+                  src="/blog.webp"
                   alt="Reading moment"
                   fill
                   priority
@@ -60,7 +59,6 @@ export default function Page() {
               </div>
             </div>
 
-            {/* RIGHT TEXT */}
             <div className="flex flex-col gap-6 text-center lg:text-left w-full lg:w-1/2">
               <h1 className="text-5xl md:text-7xl font-semibold text-[#2E3D1F] leading-tight tracking-tight">
                 Therapy Insights & Reflections

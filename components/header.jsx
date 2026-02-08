@@ -5,7 +5,7 @@ import { useState } from "react";
 const Header = () => {
   const [drop, setDrop] = useState(false);
   return (
-    <header className="top-0 left-0 max-w-screen z-50">
+    <header className="top-0 left-0 max-w-screen z-50 bg-[#fbf8f4]">
       <div className="mx-auto sticky flex h-[88px] items-center justify-between px-6 md:px-[54px] z-51 bg-transparent">
         <button
           className="flex flex-col gap-2 md:hidden"
@@ -34,7 +34,7 @@ const Header = () => {
         </nav>
       </div>
       {drop && (
-        <div className="fixed inset-0 z-50 flex flex-col items-center justify-center gap-12 text-5xl font-semibold bg-white md:hidden">
+        <div className="fixed inset-0 z-50 flex flex-col items-center justify-center gap-12 text-5xl font-semibold bg-[#fbf8f4] md:hidden">
           <Link href="/blog" onClick={() => setDrop(false)}>
             Blog
           </Link>

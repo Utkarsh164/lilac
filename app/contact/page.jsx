@@ -59,9 +59,9 @@ const Contact = () => {
 
   return (
     <>
-      <section className="max-w-screen connect-session relative bg-[#cfd0d8] pb-36">
+      <section className="max-w-screen connect-session relative bg-[#fbf8f4] pb-36">
         <div className="max-w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 px-4">
-          {/* LEFT COLUMN */}
+
           <div className="flex flex-col md:pl-20 pt-20 text-center md:text-left">
             <h1 className="text-5xl md:text-7xl font-medium tracking-tight text-[#233a1b] mb-10">
               Let’s Connect
@@ -76,7 +76,6 @@ const Contact = () => {
               </p>
             </div>
 
-            {/* Images */}
             <div className="relative mt-6 flex justify-center md:justify-start">
               <Image
                 src="/floral.webp"
@@ -159,13 +158,13 @@ const Contact = () => {
           </div>
 
           <div className="w-full lg:w-[700px] h-[420px] bg-white">
-            <iframe
-              title="Office location map"
-              src="https://www.google.com/maps?q=123th+Street+45+W+Santa+Monica+CA+90401&output=embed"
-              className="w-full h-full border-0"
-              loading="lazy"
-            />
-          </div>
+  <iframe
+    title="Office location map"
+    src="https://www.google.com/maps?q=123th+Street+45+W+Santa+Monica+CA+90401&output=embed"
+    className="w-full h-full border-0"
+    loading="lazy"
+  />
+</div>
         </div>
       </section>
 

@@ -41,7 +41,7 @@ const SupportSection = () => {
     <section ref={sectionRef} className="support-section">
       <div className="support-image-wrapper">
         <Image
-          src="/floral.webp"
+          src="/notAlone.png"
           alt="Decorative image"
           fill
           className="object-cover"

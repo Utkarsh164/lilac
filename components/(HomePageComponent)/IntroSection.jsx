@@ -25,7 +25,7 @@ const IntroSection = () => {
     <section className="intro-section">
       <div className="intro-image-wrapper">
         <Image
-          src="/floral.webp"
+          src="/horizon.png"
           alt="Decorative image"
           fill
           className="intro-image"

@@ -45,7 +45,7 @@ const OurOfficeSection = () => {
   });
 
   return (
-    <section className="our-office bg-[#fbf8f4] py-28">
+    <section className="our-office bg-[#b1ada8] py-28">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           
@@ -103,7 +103,7 @@ const OurOfficeSection = () => {
               </div>
             </div>
 
-            <div className="bg-white p-6 rounded-xl shadow-sm text-sm text-gray-700">
+            <div className="bg-gray-300 p-6 rounded-xl shadow-sm text-sm text-gray-700">
               <p className="font-medium text-[#2E3D1F]">Session Options</p>
               <ul className="list-disc list-inside mt-3 space-y-1">
                 <li>In-person therapy in Santa Monica</li>

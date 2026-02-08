@@ -39,7 +39,7 @@ const AboutSection = () => {
             <div className="about-circle-decoration">
               <div className="about-circle-wrapper">
                 <Image
-                  src="/floral.webp"
+                  src="/circleFlower.png"
                   alt="floral detail"
                   fill
                   className="object-cover"
@@ -56,7 +56,7 @@ const AboutSection = () => {
             </h1>
 
             <p className="about-subtitle">
-              Therapy for Adults in Minneapolis, MN.
+              Anxiety & Trauma Therapy in Santa Monica, CA.
             </p>
 
             <Link href="/" className="mt-10">

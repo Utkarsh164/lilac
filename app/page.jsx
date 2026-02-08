@@ -10,7 +10,7 @@ import OurOfficeSection from "@/components/(HomePageComponent)/ourOfficeSection"
 
 export default function Home() {
   return (
-    <div className="max-w-screen">
+    <div className="max-w-screen bg-[#fbf8f4]">
       <HeroSection />
       <IntroSection />
       <SpecialtiesSection/>
