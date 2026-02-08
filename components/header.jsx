@@ -25,7 +25,7 @@ const Header = () => {
         </button>
 
         <h1 className="text-3xl md:text-4xl font-medium text-[#2F3B1F] ml-auto md:ml-0">
-          <Link href="/">Lilac Template</Link>
+          <Link href="/">Lilac</Link>
         </h1>
 
         <nav className="hidden md:flex items-center gap-8 text-2xl text-[#2F3B1F]">
