@@ -1,52 +1,8 @@
 "use client";
-import { useGSAP } from "@gsap/react";
-import gsap, { ScrollTrigger } from "gsap/all";
 import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
-  useGSAP(() => {
-    gsap.registerPlugin(ScrollTrigger);
-
-    const footerTop = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".footer-top",
-        start: "top 75%",
-        end: "bottom bottom",
-      },
-    });
-    footerTop.from(".footer-top", {
-      opacity: 0,
-      y: 40,
-      duration: 1,
-    });
-
-    // stagger the top section columns/content
-    footerTop.from(
-      ".footer-top .max-w-sm, .footer-top > .flex > div",
-      { opacity: 0, y: 20, stagger: 0.12, duration: 0.6 },
-      "-=" + 0.6
-    );
-
-    const footerBottom = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".footer-bottom",
-        start: "top 75%",
-        end: "bottom bottom",
-      },
-    });
-    footerBottom.from(".footer-bottom", {
-      opacity: 0,
-      y: 30,
-      duration: 1,
-    });
-
-    footerBottom.from(
-      ".footer-bottom nav a",
-      { opacity: 0, y: 10, stagger: 0.08, duration: 0.6 },
-      "-=" + 0.6
-    );
-  });
 
   return (
     <footer>
@@ -88,15 +44,15 @@ const Footer = () => {
               <h3 className="text-[39px] font-semibold mb-10">Find</h3>
 
               <nav className="flex flex-col gap-3 font-medium text-xl">
-                <Link href="/" className="underline">
+                <div className="underline">
                   Home
-                </Link>
-                <Link href="/contact" className="underline">
+                </div>
+                <div className="underline">
                   Contact
-                </Link>
-                <Link href="/blog" className="underline">
+                </div>
+                <div className="underline">
                   Blog
-                </Link>
+                </div>
               </nav>
             </div>
           </div>
@@ -106,10 +62,10 @@ const Footer = () => {
       <section className="footer-bottom bg-[#E9E6DF] px-6 pt-16 pb-20 text-[#2F3B1F] text-md">
         <div className="max-w-[1200px] mx-auto text-center space-y-8">
           <nav className="flex justify-center gap-8 underline">
-            <Link href="/privacy-policy">Privacy & Cookies Policy</Link>
-            <Link href="/good-faith-estimate">Good Faith Estimate</Link>
-            <Link href="/terms">Website Terms & Conditions</Link>
-            <Link href="/disclaimer">Disclaimer</Link>
+            <div >Privacy & Cookies Policy</div>
+            <div >Good Faith Estimate</div>
+            <div >Website Terms & Conditions</div>
+            <div >Disclaimer</div>
           </nav>
 
           <p>
