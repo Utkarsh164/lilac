@@ -7,7 +7,6 @@ import IntroSection from "@/components/(HomePageComponent)/IntroSection";
 import SpecialtiesSection from "@/components/(HomePageComponent)/specialtiesSection";
 import SupportSection from "@/components/(HomePageComponent)/supportSection";
 
-gsap.registerPlugin(ScrollTrigger);
 export default function Home() {
   return (
     <div>

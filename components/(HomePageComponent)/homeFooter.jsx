@@ -5,6 +5,7 @@ import gsap, { ScrollTrigger } from "gsap/all";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 
+
 gsap.registerPlugin(ScrollTrigger);
 const HomeFooter = () => {
   useGSAP(() => {
