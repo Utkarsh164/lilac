@@ -10,7 +10,7 @@ export default function Page() {
           <div className="flex flex-col lg:flex-row items-center gap-16">
             {/* LEFT IMAGE */}
             <div className="flex justify-center lg:justify-start w-full lg:w-1/2">
-              <div className="relative w-[340px] md: w-[500px] h-[500px] md: h-[700px] rounded-t-[999px] overflow-hidden">
+              <div className="relative w-[180px] h-[240px] md:w-[200px] md:h-[300px] lg:w-[500px] lg:h-[700px] rounded-t-[999px] overflow-hidden">
                 <Image
                   src="/floral.webp"
                   alt="Reading moment"
@@ -23,11 +23,11 @@ export default function Page() {
 
             {/* RIGHT TEXT */}
             <div className="flex flex-col gap-6 text-center lg:text-left w-full lg:w-1/2">
-              <h1 className="text-5xl md:text-6xl font-semibold text-[#2E3D1F] leading-tight tracking-tight">
+              <h1 className="text-5xl md:text-7xl font-semibold text-[#2E3D1F] leading-tight tracking-tight">
                 The Lilac Blog
               </h1>
 
-              <p className="text-lg text-[#2E3D1F]/80 max-w-md">
+              <p className="text-md md: text-2xl text-[#2E3D1F]/80 max-w">
                 My tiny corner of the internet
                 <br />
                 where I talk about all things
@@ -35,7 +35,7 @@ export default function Page() {
                 healing, heart, and wholeness.
               </p>
 
-              <span className="text-sm font-medium text-[#2E3D1F]/80">
+              <span className="text-md font-medium text-[#2E3D1F]/80">
                 Glad you’re here.
               </span>
             </div>
@@ -55,7 +55,9 @@ export default function Page() {
       <section className="w-max-screen bg-[#8a8650] py-20">
         <div className="max-w-6xl mx-auto border border-2 border-gray-300 px-6 py-27">
           <div className="flex flex-col items-center text-center">
-            <h1 className="text-4xl font-semibold text-white mb-4">Subscribe</h1>
+            <h1 className="text-4xl font-semibold text-white mb-4">
+              Subscribe
+            </h1>
 
             <p className="text-white mb-10 font-medium text-xl">
               Sign up with your email address to receive news and updates.

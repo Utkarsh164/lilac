@@ -6,14 +6,14 @@ const Contact = () => {
   return (
     <>
       <section className="relative bg-[#cfd0d8] pb-36">
-        <div className="max-w-full mx-auto grid lg:grid-cols-2 gap-20 px-4 ">
+        <div className="max-w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 px-4">
           {/* LEFT COLUMN */}
-          <div className="flex flex-col pl-20 pt-20">
-            <h1 className="text-[88px] font-medium tracking-tight text-[#233a1b] mb-10">
+          <div className="flex flex-col md:pl-20 pt-20 text-center md:text-left">
+            <h1 className="text-5xl md:text-7xl font-medium tracking-tight text-[#233a1b] mb-10">
               Let’s Connect
             </h1>
 
-            <div className="text-[20px] text-[#233a1b] leading-relaxed mb-4 max-w-md">
+            <div className="text-[20px] text-[#233a1b] leading-relaxed mb-6 max-w-md mx-auto md:mx-0">
               <p className="mb-4">Starting therapy is courageous.</p>
               <p>
                 Get in touch for questions, or to book a free
@@ -23,7 +23,7 @@ const Contact = () => {
             </div>
 
             {/* Images */}
-            <div className="relative mt-3 ml-6">
+            <div className="relative mt-6 flex justify-center md:justify-start">
               <Image
                 src="/floral.webp"
                 alt="floral"
@@ -32,7 +32,7 @@ const Contact = () => {
                 className="rounded-t-full object-cover"
               />
 
-              <div className="absolute bottom-0 right-[270px] w-[160px] h-[160px] rounded-full overflow-hidden">
+              <div className="absolute bottom-0 right-10 md:right-[270px] w-[160px] h-[160px] rounded-full overflow-hidden">
                 <Image
                   src="/floral.webp"
                   alt="floral detail"
@@ -44,11 +44,16 @@ const Contact = () => {
           </div>
 
           {/* RIGHT COLUMN */}
-          <div className="flex items-center">
-            <div className="bg-[#243b1b] text-white px-8 py-8 w-[550px] h-[250px] ml-10">
-              <p className="text-xl">
-                <span className="text-xl font-semibold">PLEASE NOTE:</span> If
-                you opt to use a “Form Block” on your contact page this is not
+          <div className="flex justify-center lg:justify-start items-center order-last lg:order-none">
+            <div
+              className="bg-[#243b1b] text-white px-8 py-8 
+                      w-full md:w-[550px] 
+                      h-auto md:h-[250px] 
+                      mx-auto lg:ml-10"
+            >
+              <p className="text-lg md:text-xl leading-relaxed">
+                <span className="font-semibold">PLEASE NOTE:</span> If you opt
+                to use a “Form Block” on your contact page this is not
                 HIPAA-compliant. Squarespace stores data that is input into
                 forms in the Marketing tab under Profiles. Instead, you can
                 embed a HIPAA-compliant form, a link to your client portal, or
@@ -123,25 +128,22 @@ const Contact = () => {
           </div>
         </div>
       </section>
+
       <section className="w-max-screen px-10 py-16 bg-[#faf6ef]">
         <h1 className="text-5xl text-green-900 mb-12">Find me on social.</h1>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10">
-  {socialMedia.map((it) => (
-    <div
-      key={it.id}
-      className="relative w-full aspect-square"
-    >
-      <Image
-        src={it.imgUrl}
-        alt={it.id}
-        fill
-        className="object-cover"
-      />
-    </div>
-  ))}
-</div>
-
+          {socialMedia.map((it) => (
+            <div key={it.id} className="relative w-full aspect-square">
+              <Image
+                src={it.imgUrl}
+                alt={it.id}
+                fill
+                className="object-cover"
+              />
+            </div>
+          ))}
+        </div>
       </section>
     </>
   );
