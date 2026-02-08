@@ -16,24 +16,21 @@ export default function Page() {
   return (
     <section className="bg-[#FBF7F2] min-h-screen">
       <div className="mx-auto max-w-[640px] px-6 pt-[140px] pb-[160px]">
-        {/* DATE */}
+
         <p className="text-center text-[12px] tracking-[0.2em] text-[#2E3D1F]/60 mb-[48px]">
           {formatDate(content.date).toUpperCase()}
         </p>
 
-        {/* TITLE */}
         <h1 className="text-center text-7xl leading-[1.15] font-medium text-[#2E3D1F] mb-[72px]">
           {content.title}
         </h1>
 
-        {/* BODY */}
         <div className="space-y-[32px] text-xl leading-[1.8] text-[#2E3D1F]/80">
           {content.content.split("\n\n").map((p, i) => (
             <p key={i}>{p}</p>
           ))}
         </div>
       </div>
-      {/* NEXT / PREV */}
       <div className="mx-auto max-w-screen px-6 pb-[120px]">
         <div className="flex items-center justify-between gap-5 text-[#2E3D1F]">
           {/* PREV */}
